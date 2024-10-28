@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">VENTIAPP Lub.Julio</string>
+    <string name="agregar_temperatura">Agregar Temperatura</string>
+    <string name="login">login</string>
+    <string name="editar_temperatura">Editar Temperatura</string>
+    <string name="ver_historial">Ver Historial</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="password">Contraseña</string>
+    <string name="usuario">Usuario</string>
+    <string name="historial_de_temperaturas">Historial de Temperaturas</string>
+    <string name="edit_temperatura">Editar temperatura</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="guardar_temperatura">Guardar Temperatura</string>
+    <string name="ingrese_temperatura">Ingrese temperatura</string>
+    <string name="volver_a_la_pantalla_principal">Volver a la pantalla principal</string>
+    <string name="no_hay_temperaturas_registradas">No hay temperaturas registradas.</string>
+</resources>
