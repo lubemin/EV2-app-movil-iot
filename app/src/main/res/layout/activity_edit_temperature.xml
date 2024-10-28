@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@drawable/background_gradient">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/actualizar_t"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp"/>
 
     <EditText
         android:id="@+id/etNewTemperature"
@@ -20,12 +31,29 @@
         android:text="@string/actualizar"
         android:padding="12dp"
         android:layout_marginTop="16dp"/>
+
     <Button
         android:id="@+id/btnBackToMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/volver_a_la_pantalla_principal"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"/>
 
+    <!-- Nuevo apartado para mostrar la temperatura actual -->
+    <TextView
+        android:id="@+id/tvCurrentTemperatureLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temperatura_actual"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"/>
 
+    <TextView
+        android:id="@+id/tvCurrentTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
 </LinearLayout>

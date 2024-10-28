@@ -3,23 +3,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@drawable/background_gradient">
+
 
     <TextView
         android:id="@+id/tvHistory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/historial_de_temperaturas"
+        android:layout_gravity="center"
         android:textSize="18sp"
         android:textStyle="bold"
         android:layout_marginBottom="8dp"/>
 
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
     <TextView
         android:id="@+id/tvTemperatureHistory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/no_hay_temperaturas_registradas"
         android:textSize="16sp"/>
+    </ScrollView>
 
     <Button
         android:id="@+id/btnBackToMain"

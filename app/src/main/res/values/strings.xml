@@ -14,4 +14,9 @@
     <string name="ingrese_temperatura">Ingrese temperatura</string>
     <string name="volver_a_la_pantalla_principal">Volver a la pantalla principal</string>
     <string name="no_hay_temperaturas_registradas">No hay temperaturas registradas.</string>
+    <string name="ventiapp">VENTIAPP</string>
+    <string name="login_title">LOGIN</string>
+    <string name="temperatura">TEMPERATURA</string>
+    <string name="actualizar_t">ACTUALIZAR T°</string>
+    <string name="temperatura_actual">Temperatura actual</string>
 </resources>

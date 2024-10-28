@@ -7,7 +7,6 @@ import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 
 class AddTemperatureActivity : AppCompatActivity() {
-    private val temperatureList = mutableListOf<TemperatureEntry>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,8 +21,10 @@ class AddTemperatureActivity : AppCompatActivity() {
             val temperatureText = etNewTemperature.text.toString()
             if (temperatureText.isNotEmpty()) {
                 val temperatureValue = temperatureText.toFloat()
-                val newEntry = TemperatureEntry(temperatureValue)
-                temperatureList.add(newEntry)  // Guardar la nueva entrada en la lista
+
+                // Usamos TemperatureStorage para guardar la temperatura
+                TemperatureStorage.addTemperature(temperatureValue) // Cambié a 'temperatureValue' como Float
+
                 etNewTemperature.text.clear()  // Limpiar el campo de entrada
             }
         }
